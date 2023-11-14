@@ -4,6 +4,7 @@ package com.api.listProf.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -26,8 +27,14 @@ public class Contatos implements Serializable {
         @Column(nullable = false, length = 80)
         private String contato;
 
+        @CreationTimestamp
         @Column(nullable = false)
         private Date created_date;
+
+        @ManyToOne
+        @JoinColumn(name = "id_prof")
+        private Profissionais profissional;
+
 
     }
 
