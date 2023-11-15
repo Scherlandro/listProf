@@ -12,8 +12,7 @@ import java.util.Date;
 public class ContatosDto {
 
     private Integer id;
-    @NotNull
-    @NotBlank
+    @NotNull  @NotBlank
     private String nome;
     @NotNull  @NotBlank
     private String contato;

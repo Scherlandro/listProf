@@ -1,5 +1,6 @@
 package com.api.listProf.entity;
 
+import com.api.listProf.dtos.ProfissionaisDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
